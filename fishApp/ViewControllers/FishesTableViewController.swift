@@ -52,7 +52,7 @@ class FishesTableViewController: UITableViewController {
         guard let indexPath =  tableView.indexPathForSelectedRow
         else { return }
         
-        aboutFishVC.fishes = fishes[indexPath.row]
+        aboutFishVC.fish = fishes[indexPath.row]
        
     }
     /*
