@@ -16,6 +16,7 @@
 		9525828B267F9CAC0069DEC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525828A267F9CAC0069DEC3 /* DataManager.swift */; };
 		9525829D267FA61D0069DEC3 /* FishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */; };
 		952582A1267FA6510069DEC3 /* AboutFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952582A0267FA6510069DEC3 /* AboutFishViewController.swift */; };
+		952582AA267FCD2A0069DEC3 /* FishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952582A9267FCD2A0069DEC3 /* FishTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9525828A267F9CAC0069DEC3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesTableViewController.swift; sourceTree = "<group>"; };
 		952582A0267FA6510069DEC3 /* AboutFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFishViewController.swift; sourceTree = "<group>"; };
+		952582A9267FCD2A0069DEC3 /* FishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */,
+				952582A9267FCD2A0069DEC3 /* FishTableViewCell.swift */,
 				952582A0267FA6510069DEC3 /* AboutFishViewController.swift */,
 			);
 			path = ViewControllers;
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9525829D267FA61D0069DEC3 /* FishesTableViewController.swift in Sources */,
+				952582AA267FCD2A0069DEC3 /* FishTableViewCell.swift in Sources */,
 				9525828B267F9CAC0069DEC3 /* DataManager.swift in Sources */,
 				952582A1267FA6510069DEC3 /* AboutFishViewController.swift in Sources */,
 				95258273267F9C610069DEC3 /* AppDelegate.swift in Sources */,

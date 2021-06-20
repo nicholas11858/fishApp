@@ -17,15 +17,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HOh-Fl-Row">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="HOh-Fl-Row" customClass="FishTableViewCell" customModule="fishApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HOh-Fl-Row" id="Bnc-eX-tDE">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HOh-Fl-Row" id="Bnc-eX-tDE" customClass="fish">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tBF-WW-kFe">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="6Zp-eX-uzI"/>
+                                                <constraint firstAttribute="width" constant="116" id="C0c-B6-01o"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNG-Vk-ygV">
+                                            <rect key="frame" x="133" y="26" width="261" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="49" id="fe4-Db-Vui"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BNG-Vk-ygV" secondAttribute="bottom" constant="14" id="G0H-dZ-8gb"/>
+                                        <constraint firstItem="BNG-Vk-ygV" firstAttribute="leading" secondItem="tBF-WW-kFe" secondAttribute="trailing" constant="17" id="GMn-b2-kZD"/>
+                                        <constraint firstItem="tBF-WW-kFe" firstAttribute="leading" secondItem="Bnc-eX-tDE" secondAttribute="leading" id="Ih0-QO-48Q"/>
+                                        <constraint firstItem="BNG-Vk-ygV" firstAttribute="top" secondItem="Bnc-eX-tDE" secondAttribute="topMargin" constant="15" id="Nli-I3-GNF"/>
+                                        <constraint firstItem="BNG-Vk-ygV" firstAttribute="trailing" secondItem="Bnc-eX-tDE" secondAttribute="trailingMargin" id="nK8-Zx-OQT"/>
+                                        <constraint firstItem="tBF-WW-kFe" firstAttribute="top" secondItem="Bnc-eX-tDE" secondAttribute="top" id="pZ6-Cc-uYa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Jpb-fd-5rS" kind="show" id="Gyl-Sa-tKI"/>
+                                    <outlet property="fishImageView" destination="tBF-WW-kFe" id="5JJ-NQ-Br0"/>
+                                    <outlet property="nameLabel" destination="BNG-Vk-ygV" id="8am-J1-RLb"/>
+                                    <segue destination="Jpb-fd-5rS" kind="presentation" id="Gyl-Sa-tKI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -37,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWl-NZ-3nm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-397" y="102"/>
+            <point key="canvasLocation" x="-397.10144927536237" y="101.78571428571428"/>
         </scene>
         <!--About Fish View Controller-->
         <scene sceneID="WCJ-Bf-rz2">
