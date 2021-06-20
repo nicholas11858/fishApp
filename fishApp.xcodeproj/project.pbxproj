@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		95258273267F9C610069DEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95258272267F9C610069DEC3 /* AppDelegate.swift */; };
 		95258275267F9C610069DEC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95258274267F9C610069DEC3 /* SceneDelegate.swift */; };
-		95258277267F9C610069DEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95258276267F9C610069DEC3 /* ViewController.swift */; };
 		9525827A267F9C610069DEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95258278267F9C610069DEC3 /* Main.storyboard */; };
 		9525827C267F9C640069DEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9525827B267F9C640069DEC3 /* Assets.xcassets */; };
 		9525827F267F9C640069DEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9525827D267F9C640069DEC3 /* LaunchScreen.storyboard */; };
+		95258288267F9C720069DEC3 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95258287267F9C720069DEC3 /* Fish.swift */; };
+		9525828B267F9CAC0069DEC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525828A267F9CAC0069DEC3 /* DataManager.swift */; };
+		9525829D267FA61D0069DEC3 /* FishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */; };
+		952582A1267FA6510069DEC3 /* AboutFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952582A0267FA6510069DEC3 /* AboutFishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9525826F267F9C610069DEC3 /* fishApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fishApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95258272267F9C610069DEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95258274267F9C610069DEC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95258276267F9C610069DEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95258279267F9C610069DEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9525827B267F9C640069DEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9525827E267F9C640069DEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95258280267F9C640069DEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95258287267F9C720069DEC3 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		9525828A267F9CAC0069DEC3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishesTableViewController.swift; sourceTree = "<group>"; };
+		952582A0267FA6510069DEC3 /* AboutFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		95258271267F9C610069DEC3 /* fishApp */ = {
 			isa = PBXGroup;
 			children = (
-				95258272267F9C610069DEC3 /* AppDelegate.swift */,
-				95258274267F9C610069DEC3 /* SceneDelegate.swift */,
-				95258276267F9C610069DEC3 /* ViewController.swift */,
-				95258278267F9C610069DEC3 /* Main.storyboard */,
-				9525827B267F9C640069DEC3 /* Assets.xcassets */,
-				9525827D267F9C640069DEC3 /* LaunchScreen.storyboard */,
-				95258280267F9C640069DEC3 /* Info.plist */,
+				9525828E267FA03A0069DEC3 /* Models */,
+				95258292267FA4880069DEC3 /* ViewControllers */,
+				95258290267FA05E0069DEC3 /* Storyboards */,
+				95258291267FA06D0069DEC3 /* Resources */,
+				95258295267FA4B50069DEC3 /* SupportingFiles */,
 			);
 			path = fishApp;
+			sourceTree = "<group>";
+		};
+		9525828E267FA03A0069DEC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95258287267F9C720069DEC3 /* Fish.swift */,
+				9525828A267F9CAC0069DEC3 /* DataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95258290267FA05E0069DEC3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				95258278267F9C610069DEC3 /* Main.storyboard */,
+				9525827D267F9C640069DEC3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		95258291267FA06D0069DEC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9525827B267F9C640069DEC3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95258292267FA4880069DEC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9525829C267FA61D0069DEC3 /* FishesTableViewController.swift */,
+				952582A0267FA6510069DEC3 /* AboutFishViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95258295267FA4B50069DEC3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				95258272267F9C610069DEC3 /* AppDelegate.swift */,
+				95258274267F9C610069DEC3 /* SceneDelegate.swift */,
+				95258280267F9C640069DEC3 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95258277267F9C610069DEC3 /* ViewController.swift in Sources */,
+				9525829D267FA61D0069DEC3 /* FishesTableViewController.swift in Sources */,
+				9525828B267F9CAC0069DEC3 /* DataManager.swift in Sources */,
+				952582A1267FA6510069DEC3 /* AboutFishViewController.swift in Sources */,
 				95258273267F9C610069DEC3 /* AppDelegate.swift in Sources */,
 				95258275267F9C610069DEC3 /* SceneDelegate.swift in Sources */,
+				95258288267F9C720069DEC3 /* Fish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fishApp/Info.plist;
+				INFOPLIST_FILE = fishApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fishApp/Info.plist;
+				INFOPLIST_FILE = fishApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
