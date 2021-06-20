@@ -9,5 +9,5 @@ class Manager {
     
     static let shared = Manager()
     
-    var fishes123: [Fish] = [Fish(name: "salmon", description: "salmon", urlImg: "salmon")]
+    var fishes: [Fish] = [Fish(name: "salmon", description: "salmon", image: "salmon")]
 }

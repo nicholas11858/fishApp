@@ -8,11 +8,11 @@
 struct Fish {
     let name: String
     let description: String
-    let urlImg: String
+    let image: String
     
     
     static func createFishes() -> [Fish] {
-        let fishes = Manager.shared.fishes123
+        let fishes = Manager.shared.fishes
         print(fishes)
         return fishes
     }
