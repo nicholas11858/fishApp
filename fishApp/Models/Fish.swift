@@ -13,7 +13,7 @@ struct Fish {
     
     static func createFishes() -> [Fish] {
         let fishes = Manager.shared.fishes
-        print(fishes)
+
         return fishes
     }
 }
