@@ -74,17 +74,62 @@
                     <view key="view" contentMode="scaleToFill" id="zNY-5X-Rvg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFy-wv-6F2">
+                                <rect key="frame" x="122" y="75" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aFy-wv-6F2" secondAttribute="height" multiplier="1:1" id="VD3-hb-QpD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQi-NS-60i">
+                                <rect key="frame" x="128" y="318" width="158" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="BNj-i6-YqH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y7R-lM-1WB">
+                                <rect key="frame" x="20" y="384" width="374" height="370"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QEK-Xs-vCK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y7R-lM-1WB" firstAttribute="top" secondItem="oQi-NS-60i" secondAttribute="bottom" constant="45" id="1JY-cY-Hcv"/>
+                            <constraint firstItem="y7R-lM-1WB" firstAttribute="centerX" secondItem="QEK-Xs-vCK" secondAttribute="centerX" id="1Qf-mS-e9R"/>
+                            <constraint firstItem="oQi-NS-60i" firstAttribute="centerX" secondItem="QEK-Xs-vCK" secondAttribute="centerX" id="8jA-zq-9Rl"/>
+                            <constraint firstItem="aFy-wv-6F2" firstAttribute="width" secondItem="zNY-5X-Rvg" secondAttribute="width" multiplier="0.410628" id="GHt-82-rpl"/>
+                            <constraint firstItem="aFy-wv-6F2" firstAttribute="centerX" secondItem="QEK-Xs-vCK" secondAttribute="centerX" id="KxV-8h-OaY"/>
+                            <constraint firstItem="QEK-Xs-vCK" firstAttribute="bottom" secondItem="y7R-lM-1WB" secondAttribute="bottom" constant="108" id="Xyd-ax-Fo0"/>
+                            <constraint firstItem="oQi-NS-60i" firstAttribute="top" secondItem="aFy-wv-6F2" secondAttribute="bottom" constant="73" id="cfl-gc-ZD6"/>
+                            <constraint firstItem="y7R-lM-1WB" firstAttribute="width" secondItem="zNY-5X-Rvg" secondAttribute="width" multiplier="0.903382" id="e3J-o1-FNd"/>
+                            <constraint firstItem="y7R-lM-1WB" firstAttribute="top" secondItem="oQi-NS-60i" secondAttribute="bottom" constant="45" id="mxp-uY-1KV"/>
+                            <constraint firstItem="aFy-wv-6F2" firstAttribute="top" secondItem="QEK-Xs-vCK" secondAttribute="top" constant="31" id="xPa-lD-yiR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HA5-CP-pBn"/>
+                    <connections>
+                        <outlet property="fishDescriptionTextView" destination="y7R-lM-1WB" id="1GR-dy-CD8"/>
+                        <outlet property="fishImageView" destination="aFy-wv-6F2" id="5ae-gH-LvH"/>
+                        <outlet property="fishNameLabel" destination="oQi-NS-60i" id="ihE-kc-Rzj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4A-Re-bBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="500" y="102"/>
+            <point key="canvasLocation" x="500.00000000000006" y="101.78571428571428"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
